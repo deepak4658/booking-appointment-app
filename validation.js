@@ -10,4 +10,6 @@ function onsignup(){
     localStorage.setItem("time", inputTime.value);
     localStorage.setItem("date", inputDate.value);
 
+
+    localStorage.setItem('name', JSON.stringify(onsignup ));
    }
