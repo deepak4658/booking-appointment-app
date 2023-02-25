@@ -87,8 +87,8 @@ input[type=submit]
             <div class="col">
                 <div class="form"></div>
            
-<form action="#" onsubmit="onsignup(event)" novalidate>
-    <div class="form-floating">
+<form action="#"   novalidate>
+    <div class="form-floating" id="form">
     <h1><b>Get a Call</h1>
     <h5>Book a call slot and our representative will call you within 1hr of selected time</h5>
     <hr>
@@ -97,7 +97,7 @@ input[type=submit]
     <label for="email" class="form-label">Email:</label>
     <div class="invalid-feedback">Invalid Email</div>
     <div class="valid-feedback">Valid</div> 
-    <input type="text" id="email" name="email" size="100px" class="form-control" placeholder="Enter Your Email" required><br><br>
+    <input type="email" id="email" name="email" size="100px" class="form-control" placeholder="Enter Your Email" required><br><br>
     
     <label for="phone" class="form-label"></label>Phone:</label>
     <input type="text" id="phone" name="phone" size="100px" class="form-control" placeholder="Enter Your Phone" required><br><br>
@@ -105,9 +105,26 @@ input[type=submit]
     <input type="date" id="date" name="date" width="50" class="form-control" placeholder="DD-MM-YY" required>
     <label for="time"></label>
     <input type="time" id="time" name="time" width="50" class="form-control" placeholder="00:00" required><br><br>
-    <input type="submit" value="GET A CALL"><br><br>
-    <h3> User Details</h3>
+    <input type="submit" id="submit-call" value="GET A CALL"><br><br>
+    <h3>User Details</h3>
+    <div id=" submit-detail">
+        <!-- <table border="1"> -->
+            <tr>
+              <p id="id_name">Name:</p>
+              <p id="id_email">Email:</p>
+                  <p id="id_phone">Phone:</p>
+                      <p  id="id_time">Time:</p>
+                      <p id="id_date">Date:</p>
+            </tr>
+        </table>
     
+    <input type="button" id="delt-btn" value="Delete" >
+    <input type="button" id="edit-btn" value="Edit">
+   
+   
+
+    
+  </div>
 </div>
 </div>
 </div>
@@ -116,6 +133,5 @@ input[type=submit]
 <script src = 'validation.js';></script>
 
 
-   
 </body>
 </html>
