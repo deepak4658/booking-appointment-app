@@ -40,6 +40,21 @@ document.getElementById("delt-btn").addEventListener('click', (e)=>{
 }
 );
 
+document.getElementById('edit-btn').addEventListener('click', () => {
+
+
+    let user = JSON.parse(localStorage.getItem('user'));
+    
+
+    document.getElementById('name').value = user[0].name;
+    document.getElementById('email').value = user[0].email;
+    document.getElementById('phone').value = user[0].phone;
+    document.getElementById('date').value = user[0].date;
+    document.getElementById('time').value = user[0].time;
+  });
+  
+
+
 
 
 
